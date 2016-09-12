@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_70d7a34a0a2d72d8ef0e9f2aff4abde6ecaec32d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_13b0d099774ad2f7f6e4f2f0508daee2b99a6815\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_0b6b9f90257c7a982e1d833c9754d7f676a6a584\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_0530857589e25e63840ac834f3ffba84a8b01248\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_59f0a9779475438892cb7677f96059535f7c3d6c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.0_d927e8d1f610ab7e58e89b0512b22b33ebd7ef66\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_b261c3b6ce0340cea3d524c583310854d6df8515\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="9121c66407e486685cec87c5d3443f72c9b8475b">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f34cce1bd4dd5f73cc58d1786526f1a257a5ff06\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_8f61760e955818e5efe03da9b59395ec1cd51410\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_40d91bfd9b24cf71051a56e2219c1334b93010e0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="17f02268880e1d8829e14544188ede088f6ab705">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7689cea62b072c8c6ae84304a90f83bb287417f6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_8986d1528e0f438d8ff17fbab6c57d39b683d290\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_154fad287ca78ee9fe2cac53a7fefafbd993cf65\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_abedcf59f4b99bed2be61d158c15c2b976e5f519\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_442eb523120bb7e9fe022cc9a9810771c9eec440\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_d73b2494347215f012627ddbe89e06cc994a75f7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_111c1538e238d9d0118875b401e7eea9dc884d0b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.0_eeca854596385ca5ebc3fd68f23dbaac0b5bd636\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_cd6d7648cc44fc7826a978cebffae5a6668e5d16\classes.dex" />
+    </item>
+
+</items>
