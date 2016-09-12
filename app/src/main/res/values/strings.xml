@@ -5,4 +5,38 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string-array name="resistorColours">
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="multiplier">
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Gold</item>
+        <item>Silver</item>
+    </string-array>
+    <string-array name="tolerance">
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>Grey</item>
+        <item>Gold</item>
+        <item>Silver</item>
+    </string-array>
 </resources>
