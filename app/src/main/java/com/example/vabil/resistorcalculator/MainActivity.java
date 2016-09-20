@@ -22,19 +22,52 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
+    Spinner spinner2;
+    Spinner spinner3;
+    ArrayAdapter<CharSequence> adapter2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        spinner = (Spinner)findViewById(R.id.band1);
         adapter = ArrayAdapter.createFromResource(this,R.array.resistorColours,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        //WHY THIS NO WORKS
+
+     //   adapter2=ArrayAdapter.createFromResource(this.R.array.multiplier,android.R.layout.simple_spinner_item);
+        spinner = (Spinner)findViewById(R.id.band1);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-              // useless  Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" selected",Toast.LENGTH_LONG).show();
+              Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" selected",Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinner2= (Spinner)findViewById(R.id.band2);
+        spinner2.setAdapter(adapter);
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        spinner3=(Spinner)findViewById(R.id.band3);
+        spinner3.setAdapter(adapter);
+        spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
             }
 
             @Override
