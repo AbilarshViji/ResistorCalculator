@@ -39,4 +39,15 @@
         <item>Gold</item>
         <item>Silver</item>
     </string-array>
+    <string-array name="toleranceValues">
+        <item>±1%</item>
+        <item>±2%</item>
+        <item>±0.5%</item>
+        <item>±0.25%</item>
+        <item>±0.10%</item>
+        <item>±0.05%</item>
+        <item>±5%</item>
+        <item>±10%</item>
+    </string-array>
+    <string name="finalValue">test</string>
 </resources>
