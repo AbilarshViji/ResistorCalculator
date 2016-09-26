@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
@@ -28,15 +29,28 @@ public class MainActivity extends AppCompatActivity
     ArrayAdapter<CharSequence> adapter;
     ArrayAdapter<CharSequence> adapter2;
     ArrayAdapter<CharSequence> adapter3;
+    TextView textView;
     int band1;
     int band2;
     int band3;
     int multiplier;
+    int oldvalue=0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        int value=(band1*100+band2*10+band3)*multiplier;
+
+        if (oldvalue != value) {
+            textView = (TextView) findViewById(R.id.resistor_value);
+
+            textView.setText(value);
+        }
+
+        oldvalue = value;
+
         adapter = ArrayAdapter.createFromResource(this, R.array.resistorColours, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter2 = ArrayAdapter.createFromResource(this, R.array.multiplier, android.R.layout.simple_spinner_item);
@@ -70,7 +84,7 @@ public class MainActivity extends AppCompatActivity
                 } else if (parent.getItemAtPosition(position) == "White") {
                     band1 = 9;
                 }
-                 Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" selected",Toast.LENGTH_LONG).show();
+                // Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" selected",Toast.LENGTH_LONG).show();
 //                Toast.makeText(getApplicationContext(), band1, Toast.LENGTH_SHORT).show();
 
               //  Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + band1, Toast.LENGTH_SHORT).show();
@@ -87,6 +101,28 @@ public class MainActivity extends AppCompatActivity
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (parent.getItemAtPosition(position) == "Black") {
+                    band2 = 0;
+                } else if (parent.getItemAtPosition(position) == "Brown") {
+                    band2 = 1;
+                } else if (parent.getItemAtPosition(position) == "Red") {
+                    band2 = 2;
+                } else if (parent.getItemAtPosition(position) == "Orange") {
+                    band2 = 3;
+                } else if (parent.getItemAtPosition(position) == "Yellow") {
+                    band2 = 4;
+                } else if (parent.getItemAtPosition(position) == "Green") {
+                    band2 = 5;
+                } else if (parent.getItemAtPosition(position) == "blue") {
+                    band2 = 6;
+                } else if (parent.getItemAtPosition(position) == "Violet") {
+                    band2 = 7;
+                } else if (parent.getItemAtPosition(position) == "Grey") {
+                    band2 = 8;
+                } else if (parent.getItemAtPosition(position) == "White") {
+                    band2 = 9;
+                }
+
 
             }
 
@@ -100,6 +136,28 @@ public class MainActivity extends AppCompatActivity
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (parent.getItemAtPosition(position) == "Black") {
+                    band3 = 0;
+                } else if (parent.getItemAtPosition(position) == "Brown") {
+                    band3 = 1;
+                } else if (parent.getItemAtPosition(position) == "Red") {
+                    band3 = 2;
+                } else if (parent.getItemAtPosition(position) == "Orange") {
+                    band3 = 3;
+                } else if (parent.getItemAtPosition(position) == "Yellow") {
+                    band3 = 4;
+                } else if (parent.getItemAtPosition(position) == "Green") {
+                    band3 = 5;
+                } else if (parent.getItemAtPosition(position) == "blue") {
+                    band3 = 6;
+                } else if (parent.getItemAtPosition(position) == "Violet") {
+                    band3 = 7;
+                } else if (parent.getItemAtPosition(position) == "Grey") {
+                    band3 = 8;
+                } else if (parent.getItemAtPosition(position) == "White") {
+                    band3 = 9;
+                }
+
 
             }
 
@@ -154,6 +212,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -165,6 +224,7 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

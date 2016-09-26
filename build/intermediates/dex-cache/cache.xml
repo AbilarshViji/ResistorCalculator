@@ -21,6 +21,60 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="19a18df5932396374fbaa1b9bf5594bd362655ab">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f34cce1bd4dd5f73cc58d1786526f1a257a5ff06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_0b6b9f90257c7a982e1d833c9754d7f676a6a584\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7fbb7bdf853c0d5b1ac76db609b2e365cdebdbce">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7689cea62b072c8c6ae84304a90f83bb287417f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.0_eeca854596385ca5ebc3fd68f23dbaac0b5bd636\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_70d7a34a0a2d72d8ef0e9f2aff4abde6ecaec32d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_442eb523120bb7e9fe022cc9a9810771c9eec440\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,30 +93,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="44937b803e7ea12de85d501ec08167e7aaf23016">
-        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f34cce1bd4dd5f73cc58d1786526f1a257a5ff06\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="045be695d968dd707691cc55d23746dbf8cf569a">
         <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_b261c3b6ce0340cea3d524c583310854d6df8515\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
-        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.0_0b6b9f90257c7a982e1d833c9754d7f676a6a584\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -81,24 +117,6 @@
         revision="24.0.2"
         sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
         <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.0_111c1538e238d9d0118875b401e7eea9dc884d0b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8f866325ccee15e972484c9d69d0e8714daf73f2">
-        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7689cea62b072c8c6ae84304a90f83bb287417f6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
-        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.0_eeca854596385ca5ebc3fd68f23dbaac0b5bd636\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,30 +156,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\design\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
-        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.0_70d7a34a0a2d72d8ef0e9f2aff4abde6ecaec32d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
         <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_59f0a9779475438892cb7677f96059535f7c3d6c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
-        <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_442eb523120bb7e9fe022cc9a9810771c9eec440\classes.dex" />
     </item>
     <item
         is-multidex="true"
