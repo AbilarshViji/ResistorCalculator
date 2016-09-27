@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="19a18df5932396374fbaa1b9bf5594bd362655ab">
+        sha1="75c660d221d07603211e9a9ec3b7dbc28c3efe1b">
         <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f34cce1bd4dd5f73cc58d1786526f1a257a5ff06\classes.dex" />
     </item>
     <item
@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="7fbb7bdf853c0d5b1ac76db609b2e365cdebdbce">
+        sha1="87448310b12e72fa42f89cc4ad21f89bb2be0833">
         <dex dex="C:\Users\vabil\Documents\GitHub\ResistorCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7689cea62b072c8c6ae84304a90f83bb287417f6\classes.dex" />
     </item>
     <item

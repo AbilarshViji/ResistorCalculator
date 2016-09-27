@@ -1,5 +1,6 @@
 package com.example.vabil.resistorcalculator;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -16,7 +17,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
 
@@ -30,27 +30,25 @@ public class MainActivity extends AppCompatActivity
     ArrayAdapter<CharSequence> adapter2;
     ArrayAdapter<CharSequence> adapter3;
     TextView textView;
-    int band1;
-    int band2;
-    int band3;
-    int multiplier;
-    int oldvalue=0;
+    TextView textView2;
+    int band1=0;
+    int band2=0;
+    int band3=0;
+    double[] multiplierArray = {1,10,100,1000,10000,100000,1000000,10000000,0.1,0.01};
+    int[] band1Array ={0,100,200,300,400,500,600,700,800,900};
+    int[] band2Array = {0,10,20,30,40,50,60,70,80,90};
+    int[] band3Array = {0,1,2,3,4,5,6,7,8,9};
+    long value;
+    int oldPosition=1;
+    public String[] toleranceValues = {"±1%","±2%","±0.5%","±0.25%","±0.10%","±0.05%","±5%","±10%"};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int value=(band1*100+band2*10+band3)*multiplier;
-
-        if (oldvalue != value) {
-            textView = (TextView) findViewById(R.id.resistor_value);
-
-            textView.setText(value);
-        }
-
-        oldvalue = value;
-
+        textView = (TextView) findViewById(R.id.resistor_value);
+        textView2 = (TextView) findViewById(R.id.textView7);
         adapter = ArrayAdapter.createFromResource(this, R.array.resistorColours, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter2 = ArrayAdapter.createFromResource(this, R.array.multiplier, android.R.layout.simple_spinner_item);
@@ -62,32 +60,11 @@ public class MainActivity extends AppCompatActivity
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                //Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" selected",Toast.LENGTH_LONG).show();
-                if (parent.getItemAtPosition(position) == "Black") {
-                    band1 = 0;
-                } else if (parent.getItemAtPosition(position) == "Brown") {
-                    band1 = 1;
-                } else if (parent.getItemAtPosition(position) == "Red") {
-                    band1 = 2;
-                } else if (parent.getItemAtPosition(position) == "Orange") {
-                    band1 = 3;
-                } else if (parent.getItemAtPosition(position) == "Yellow") {
-                    band1 = 4;
-                } else if (parent.getItemAtPosition(position) == "Green") {
-                    band1 = 5;
-                } else if (parent.getItemAtPosition(position) == "blue") {
-                    band1 = 6;
-                } else if (parent.getItemAtPosition(position) == "Violet") {
-                    band1 = 7;
-                } else if (parent.getItemAtPosition(position) == "Grey") {
-                    band1 = 8;
-                } else if (parent.getItemAtPosition(position) == "White") {
-                    band1 = 9;
-                }
-                // Toast.makeText(getBaseContext(),parent.getItemAtPosition(position)+" selected",Toast.LENGTH_LONG).show();
-//                Toast.makeText(getApplicationContext(), band1, Toast.LENGTH_SHORT).show();
-
-              //  Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + band1, Toast.LENGTH_SHORT).show();
+                value -= band1Array[band1];
+                band1 = position;
+                value += band1Array[position];
+                String valueString = Long.toString(value);
+                textView.setText(valueString+" Ω");
 
             }
 
@@ -101,28 +78,11 @@ public class MainActivity extends AppCompatActivity
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (parent.getItemAtPosition(position) == "Black") {
-                    band2 = 0;
-                } else if (parent.getItemAtPosition(position) == "Brown") {
-                    band2 = 1;
-                } else if (parent.getItemAtPosition(position) == "Red") {
-                    band2 = 2;
-                } else if (parent.getItemAtPosition(position) == "Orange") {
-                    band2 = 3;
-                } else if (parent.getItemAtPosition(position) == "Yellow") {
-                    band2 = 4;
-                } else if (parent.getItemAtPosition(position) == "Green") {
-                    band2 = 5;
-                } else if (parent.getItemAtPosition(position) == "blue") {
-                    band2 = 6;
-                } else if (parent.getItemAtPosition(position) == "Violet") {
-                    band2 = 7;
-                } else if (parent.getItemAtPosition(position) == "Grey") {
-                    band2 = 8;
-                } else if (parent.getItemAtPosition(position) == "White") {
-                    band2 = 9;
-                }
-
+                value -= band2Array[band2];
+                band2 = position;
+                value += band2Array[position];
+                String valueString = Long.toString(value);
+                textView.setText(valueString+" Ω");
 
             }
 
@@ -136,28 +96,11 @@ public class MainActivity extends AppCompatActivity
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (parent.getItemAtPosition(position) == "Black") {
-                    band3 = 0;
-                } else if (parent.getItemAtPosition(position) == "Brown") {
-                    band3 = 1;
-                } else if (parent.getItemAtPosition(position) == "Red") {
-                    band3 = 2;
-                } else if (parent.getItemAtPosition(position) == "Orange") {
-                    band3 = 3;
-                } else if (parent.getItemAtPosition(position) == "Yellow") {
-                    band3 = 4;
-                } else if (parent.getItemAtPosition(position) == "Green") {
-                    band3 = 5;
-                } else if (parent.getItemAtPosition(position) == "blue") {
-                    band3 = 6;
-                } else if (parent.getItemAtPosition(position) == "Violet") {
-                    band3 = 7;
-                } else if (parent.getItemAtPosition(position) == "Grey") {
-                    band3 = 8;
-                } else if (parent.getItemAtPosition(position) == "White") {
-                    band3 = 9;
-                }
-
+                value -= band3Array[band3];
+                band3 = position;
+                value += band3Array[position];
+                String valueString = Long.toString(value);
+                textView.setText(valueString+" Ω");
 
             }
 
@@ -172,6 +115,11 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
+                value /= multiplierArray[oldPosition];
+                value *= multiplierArray[position];
+                String valueString = Long.toString(value);
+                textView.setText(valueString+" Ω");
+                oldPosition=position;
             }
 
             @Override
@@ -184,7 +132,7 @@ public class MainActivity extends AppCompatActivity
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+            textView2.setText(toleranceValues[position]);
             }
 
             @Override
@@ -195,14 +143,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

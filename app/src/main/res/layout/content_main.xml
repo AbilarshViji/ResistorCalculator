@@ -70,13 +70,71 @@
         android:spinnerMode="dropdown" />
 
     <TextView
-        android:text="Test"
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/resistor_value"
-        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textAppearance="@android:style/TextAppearance.Large"
         android:layout_marginTop="69dp"
         android:layout_below="@+id/tolerance"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Band 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/band3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/resistor_value"
+        android:layout_alignBottom="@+id/resistor_value"
+        android:layout_toRightOf="@+id/resistor_value"
+        android:layout_toEndOf="@+id/resistor_value"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="@string/band_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/band2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Band 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/band2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:text="Multiplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/multiplier"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:text="Tolerance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/resistor_value"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
 
 </RelativeLayout>
