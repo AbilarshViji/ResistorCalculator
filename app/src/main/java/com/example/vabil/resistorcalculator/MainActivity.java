@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity
     ArrayAdapter<CharSequence> adapter3;
     TextView textView;
     TextView textView2;
+    Button button;
     int band1=0;
     int band2=0;
     int band3=0;
@@ -38,7 +40,8 @@ public class MainActivity extends AppCompatActivity
     int[] band1Array ={0,100,200,300,400,500,600,700,800,900};
     int[] band2Array = {0,10,20,30,40,50,60,70,80,90};
     int[] band3Array = {0,1,2,3,4,5,6,7,8,9};
-    long value;
+    double value;
+    int tolerancePosition;
     int oldPosition=1;
     public String[] toleranceValues = {"±1%","±2%","±0.5%","±0.25%","±0.10%","±0.05%","±5%","±10%"};
 
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        button = (Button) findViewById((R.id.button));
         textView = (TextView) findViewById(R.id.resistor_value);
         textView2 = (TextView) findViewById(R.id.textView7);
         adapter = ArrayAdapter.createFromResource(this, R.array.resistorColours, android.R.layout.simple_spinner_item);
@@ -60,11 +64,10 @@ public class MainActivity extends AppCompatActivity
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                value -= band1Array[band1];
+
                 band1 = position;
-                value += band1Array[position];
-                String valueString = Long.toString(value);
-                textView.setText(valueString+" Ω");
+
+
 
             }
 
@@ -78,11 +81,8 @@ public class MainActivity extends AppCompatActivity
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                value -= band2Array[band2];
                 band2 = position;
-                value += band2Array[position];
-                String valueString = Long.toString(value);
-                textView.setText(valueString+" Ω");
+
 
             }
 
@@ -96,11 +96,8 @@ public class MainActivity extends AppCompatActivity
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                value -= band3Array[band3];
                 band3 = position;
-                value += band3Array[position];
-                String valueString = Long.toString(value);
-                textView.setText(valueString+" Ω");
+
 
             }
 
@@ -114,11 +111,6 @@ public class MainActivity extends AppCompatActivity
         spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                value /= multiplierArray[oldPosition];
-                value *= multiplierArray[position];
-                String valueString = Long.toString(value);
-                textView.setText(valueString+" Ω");
                 oldPosition=position;
             }
 
@@ -132,7 +124,7 @@ public class MainActivity extends AppCompatActivity
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            textView2.setText(toleranceValues[position]);
+                tolerancePosition = position;
             }
 
             @Override
@@ -142,6 +134,16 @@ public class MainActivity extends AppCompatActivity
         });
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                value=(band1Array[band1]+band2Array[band2]+band3Array[band3])*multiplierArray[oldPosition];
+                String valueString = Double.toString(value);
+                textView.setText(valueString+" Ω");
+                textView2.setText(toleranceValues[tolerancePosition]);
+
+            }
+        });
 
 
 
@@ -153,6 +155,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
 
     }
 
