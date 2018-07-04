@@ -1,10 +1,7 @@
 package com.example.vabil.resistorcalculator;
 
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,15 +19,15 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity
 
         implements NavigationView.OnNavigationItemSelectedListener {
-    Spinner spinner;
-    Spinner spinner2;
-    Spinner spinner3;
-    Spinner spinner4;
-    Spinner spinner5;
+    Spinner band1Spinner;
+    Spinner band2Spinner;
+    Spinner band3Spinner;
+    Spinner multiplierSpinner;
+    Spinner toleranceSpinner;
     ArrayAdapter<CharSequence> adapter;
     ArrayAdapter<CharSequence> adapter2;
     ArrayAdapter<CharSequence> adapter3;
-    TextView textView;
+    TextView resistorValue;
     TextView textView2;
     Button button;
     int band1=0;
@@ -44,31 +41,26 @@ public class MainActivity extends AppCompatActivity
     int tolerancePosition;
     int oldPosition=1;
     public String[] toleranceValues = {"±1%","±2%","±0.5%","±0.25%","±0.10%","±0.05%","±5%","±10%"};
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = (Button) findViewById((R.id.button));
-        textView = (TextView) findViewById(R.id.resistor_value);
-        textView2 = (TextView) findViewById(R.id.textView7);
+        resistorValue = (TextView) findViewById(R.id.resistor_value);
+        textView2 = (TextView) findViewById(R.id.outputText);
         adapter = ArrayAdapter.createFromResource(this, R.array.resistorColours, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter2 = ArrayAdapter.createFromResource(this, R.array.multiplier, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter3 = ArrayAdapter.createFromResource(this, R.array.tolerance, android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner = (Spinner) findViewById(R.id.band1);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        band1Spinner = (Spinner) findViewById(R.id.band1);
+        band1Spinner.setAdapter(adapter);
+        band1Spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
                 band1 = position;
-
-
-
             }
 
             @Override
@@ -76,14 +68,12 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
-        spinner2 = (Spinner) findViewById(R.id.band2);
-        spinner2.setAdapter(adapter);
-        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        band2Spinner = (Spinner) findViewById(R.id.band2);
+        band2Spinner.setAdapter(adapter);
+        band2Spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 band2 = position;
-
-
             }
 
             @Override
@@ -91,24 +81,21 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
-        spinner3 = (Spinner) findViewById(R.id.band3);
-        spinner3.setAdapter(adapter);
-        spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        band3Spinner = (Spinner) findViewById(R.id.band3);
+        band3Spinner.setAdapter(adapter);
+        band3Spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 band3 = position;
-
-
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
-        spinner4 = (Spinner) findViewById(R.id.multiplier);
-        spinner4.setAdapter(adapter2);
-        spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        multiplierSpinner = (Spinner) findViewById(R.id.multiplier);
+        multiplierSpinner.setAdapter(adapter2);
+        multiplierSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 oldPosition=position;
@@ -116,12 +103,11 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
-        spinner5 = (Spinner) findViewById(R.id.tolerance);
-        spinner5.setAdapter(adapter3);
-        spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        toleranceSpinner = (Spinner) findViewById(R.id.tolerance);
+        toleranceSpinner.setAdapter(adapter3);
+        toleranceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 tolerancePosition = position;
@@ -139,7 +125,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 value=(band1Array[band1]+band2Array[band2]+band3Array[band3])*multiplierArray[oldPosition];
                 String valueString = Double.toString(value);
-                textView.setText(valueString+" Ω");
+                resistorValue.setText(valueString+" Ω");
                 textView2.setText(toleranceValues[tolerancePosition]);
 
             }

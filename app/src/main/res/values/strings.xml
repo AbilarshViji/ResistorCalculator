@@ -42,4 +42,10 @@
 
     <string name="finalValue">test</string>
     <string name="band_1">Band 1</string>
+    <string name="band_2">Band 2</string>
+    <string name="band_3">Band 3</string>
+    <string name="multiplier">Multiplier</string>
+    <string name="tolerance">Tolerance</string>
+    <string name="button">Calculate Resistance</string>
+
 </resources>

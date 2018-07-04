@@ -70,51 +70,50 @@
         android:spinnerMode="dropdown" />
 
     <TextView
-        android:text="Band 3"
+        android:id="@+id/band3Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
+        android:layout_alignLeft="@+id/band2Text"
+        android:layout_alignStart="@+id/band2Text"
         android:layout_alignTop="@+id/band3"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:text="@string/band_3" />
 
     <TextView
-        android:text="Band 2"
+        android:id="@+id/band2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
+        android:layout_alignStart="@+id/band1Text"
         android:layout_alignTop="@+id/band2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:text="@string/band_2"
+        android:layout_alignLeft="@+id/band1Text" />
 
     <TextView
-        android:text="Multiplier"
+        android:id="@+id/multiplierText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5"
+        android:layout_alignLeft="@+id/band3Text"
+        android:layout_alignStart="@+id/band3Text"
         android:layout_alignTop="@+id/multiplier"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4" />
+        android:text="@string/multiplier" />
 
     <TextView
-        android:text=""
+        android:id="@+id/outputText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:id="@+id/textView7"
-        android:layout_alignBaseline="@+id/resistor_value"
-        android:layout_alignBottom="@+id/resistor_value"
-        android:layout_toRightOf="@+id/textView5"
-        android:layout_toEndOf="@+id/textView5" />
+        android:layout_alignTop="@+id/resistor_value"
+        android:layout_toEndOf="@+id/band1"
+        android:layout_toRightOf="@+id/band1"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.Large" />
 
     <Button
-        android:text="Calculate Resistance"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
         android:layout_below="@+id/tolerance"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp"
+        android:text="@string/button" />
 
     <TextView
         android:text=""
@@ -123,27 +122,29 @@
         android:id="@+id/resistor_value"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:layout_below="@+id/button"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignRight="@+id/band3Text"
+        android:layout_alignEnd="@+id/band3Text"
         android:layout_marginTop="24dp" />
 
     <TextView
-        android:text="Tolerance"
+        android:id="@+id/toleranceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView6"
+        android:layout_alignLeft="@+id/multiplierText"
+        android:layout_alignStart="@+id/multiplierText"
         android:layout_alignTop="@+id/tolerance"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5" />
+        android:text="@string/tolerance" />
 
     <TextView
-        android:text="@string/band_1"
+        android:id="@+id/band1Text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_alignBaseline="@+id/band1"
-        android:layout_alignBottom="@+id/band1"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/band1"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:text="@string/band_1"
+        android:layout_alignParentRight="true" />
 
 
 </RelativeLayout>
